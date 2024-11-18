@@ -16,6 +16,7 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+  font-family: 'Inter';
 }
 
 #root {
@@ -55,6 +56,7 @@ footer div {
 
 footer h2 {
   font-size: 1.4rem;
+  font-family: 'Press Start 2P';
 }
 
 footer h1 {
@@ -121,6 +123,7 @@ footer button:hover {
 .sidebarContents h2 {
   font-weight: 200;
   font-size: 1.4rem;
+  font-family: 'Press Start 2P';
 }
 
 .sidebarContents div {
@@ -141,6 +144,42 @@ footer button:hover {
 .sidebarContents button:hover {
   opacity: 0.7;
 }
+
+.descriptionContainer {
+  display: flex;
+  flex-direction: column;
+  gap: .5rem;
+}
+
+.descriptionTitle {
+  font-size: 1.1rem;
+  font-weight: 200;
+}
+
+
+
+.loadingState {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex: 1;
+}
+
+.loadingState i {
+  opacity: .2;
+  font-size: 3rem;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
 
 @media (min-width: 640px) {
   .sidebar {
